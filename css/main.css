@@ -82,11 +82,6 @@ body{
 	padding: 0px;
 	margin: 0px;
 	text-color: #fff;
-	text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
 }
 
 a:focus{
@@ -213,6 +208,11 @@ header .social li:first-child{
 	height: 560px;
 	background: url('../img/hero.jpg') no-repeat fixed center center;	
 	background-size: cover;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .hero .caption{
@@ -224,6 +224,11 @@ header .social li:first-child{
 	-webkit-transform:translate(0,-50%);
 	-moz-transform:translate(0,-50%);
 	-o-transform:translate(0,-50%);
+	    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .hero .caption h1{
@@ -232,6 +237,11 @@ header .social li:first-child{
 	font-size: 34px;
 	font-weight: bold;
 	word-break: break-word;
+	    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .hero .caption p{
@@ -250,6 +260,11 @@ header .social li:first-child{
 
 #slider .caption p{
 	margin: 0;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 a.app_store_btn{
