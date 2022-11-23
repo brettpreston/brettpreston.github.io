@@ -170,7 +170,7 @@ header .social li:first-child{
 
 
 
-/*		Hero section 		*/
+/*		Hero section 		
 
 .hero{
 	display: block;
@@ -350,6 +350,7 @@ a.app_link{
 }
 
 
+*/
 
 
 
@@ -358,8 +359,7 @@ a.app_link{
 
 
 
-
-/*		Featured on section 		*/
+/*		Featured on section 		
 
 .featured_on{
 	width: 100%;
@@ -381,7 +381,7 @@ a.app_link{
 }
 
 
-
+*/
 
 
 
@@ -396,7 +396,6 @@ a.app_link{
 }
 
 .about .portrait{
-	max-width: 339px;
 	position: relative;
 	display: inline-block;
 	text-align: center;
@@ -758,6 +757,11 @@ footer .copyright a{
 		display: block;
 		width: 100%;
 	}
+
+	.about .portrait img{
+		width: 100%;
+		height: auto;
+	}
 }
 
 @media (max-width: 767px) {
@@ -813,6 +817,8 @@ footer .copyright a{
 		margin-left: 10px;
 	}
 
+	
+
 
 
 
@@ -850,9 +856,20 @@ footer .copyright a{
 
 
 	/*		About Section 		*/
+
+	.about{
+		padding: 0px 20px;
+	}
+
+
 	.about .blurb {
 		text-align: center;
 		margin: 0;
+	}
+
+	.about .portrait img{
+		width: 100%;
+		height: auto;
 	}
 
 	.about .blurb ul li{
