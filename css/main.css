@@ -57,25 +57,6 @@
 
 
 
-
-@font-face {
-    font-family: 'termina';
-    src: url('fonts/Termina.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'termina-light';
-    src: url('fonts/termina-light-webfont.woff') format('woff');
-	     url('fonts/termina-light-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
 /* exo-2-regular - latin */
 @font-face {
   font-family: 'Exo 2';
@@ -146,10 +127,6 @@ body{
 
 }
 
-a:focus{
-	color: #fff!important;
-	text-decoration: none!important;
-}
 
 .container{
 	max-width: 90%;
@@ -222,9 +199,7 @@ header .logo{
 }
 
 header .burger_icon{
-	display: none;
 	float: right;
-	background: #ffffff;
 	padding: 5px 10px;
 	text-transform: uppercase;
 
@@ -236,8 +211,6 @@ header .burger_icon{
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 	border-color: #000000
-
-	margin: 45px 10px 0 0;
 }
 
 header .burger_icon:hover{
@@ -272,10 +245,6 @@ header nav li a{
 	font-style: bold;
 	font-size: 26px;
 
-	transition: all .2s linear;
-	-o-transition: all .2s linear;
-	-moz-transition: all .2s linear;
-	-webkit-transition: all .2s linear;
 }
 
 header nav li a:hover,
@@ -670,7 +639,6 @@ a.app_link{
 	padding: 80px 10% 40px 10%;
 	background-image: linear-gradient(#10105E,#0a0a1a,#0a0a1a,#0a0a1a,#10105E);
 	background-repeat: no-repeat;
-	background-width: cover;
 	background-color: #10105E;
 	height: auto;
 	font-weight: 200;
@@ -980,7 +948,7 @@ a.app_link{
 
 /*  */
 
-.#tslider{
+#tslider{
 	text-align: center!important;
 	position: relative!important;
 }
@@ -1190,7 +1158,6 @@ footer .copyright a{
 		padding: 80px 10% 40px 10%;
 		background-image: linear-gradient(#10105E,#0a0a1a,#0a0a1a,#0a0a1a,#10105E);
 		background-repeat: no-repeat;
-		background-width: cover;
 		background-color: #10105E;
 		height: auto;
 		font-weight: 200;
@@ -1271,6 +1238,7 @@ footer .copyright a{
 		width: 100%;
 		margin: 0;
 		text-align: center;
+		-webkit-transition: all .2s linear;
 	}
 
 	header nav li a{
