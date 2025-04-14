@@ -115,9 +115,6 @@
 
 
 
-
-
-
 /*		General CSS		*/
 body{
 	background: #faf9f9;
@@ -146,12 +143,17 @@ body{
 @media (min-width:1600px){.container{width:1500px}}
 
 .container2{
-	max-width: 90%;
+	max-width: 100%;
 	padding-right:15px;
 	padding-left:15px;
 	margin-right:auto;
 	margin-left:auto}
 	
+@media (max-width:768px){.container2{
+	padding-bottom: 20px;
+	max-width: 98%;
+}}
+
 @media (min-width:768px){.container2{width:750px}}
 
 @media (min-width:992px){.container2{width:970px}}
@@ -277,7 +279,19 @@ header .social li:first-child{
 
 
 
+.tagline{
+	font-family:  'Exo 2';
+	color: #4189c3;
+	font-size: 20;
+	text-align: right;
+}
 
+.tagline2{
+	font-family:  'Exo 2';
+	color: #4189c3;
+	font-size: 20;
+	text-align: justify;
+}
 
 
 
@@ -790,6 +804,10 @@ a.app_link{
 	text-align: left;
 }
 
+.button-slides{
+	visibility: hidden;
+}
+
 .button-epk {
 	
         border: 2px solid #4189c3;
@@ -831,6 +849,10 @@ a.app_link{
 	cursor: pointer;
 	border-radius: 15px;
 }
+
+.button-menu {
+}
+
 
   .button-epk:active {
 	background-color: #0a0a1a;
@@ -1167,7 +1189,11 @@ footer .copyright a{
 }
 
 
+.no-mobile{}
 
+.mobile{
+	display:none;
+}
 
 @media (max-width: 360px) {
 
@@ -1177,7 +1203,7 @@ footer .copyright a{
 	width: 100%;
 	height: 120px;
 	z-index: 99;
-	background: url('../img/solidarity_thin.png');
+	background: url('../img/name.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #0a0a1a;
@@ -1192,6 +1218,9 @@ footer .copyright a{
 	}
 }
 
+
+
+
 @media (max-width: 767px) {
 
 
@@ -1200,13 +1229,14 @@ footer .copyright a{
 	position: relative;
 	display: block;
 	width: 100%;
-	height: 120px;
+	height: 80;
 	z-index: 99;
-	background: url('../img/solidarity.png');
+	background-image: linear-gradient(to top right,#0a0a1a,#10105E);
+	background: url('../img/name.png');
 	background-repeat: no-repeat;
-	background-size: 332px 100px;
-	background-position: center;
+	background-size: 400px 70px;
 	background-color: #0a0a1a;
+	background-position: right;
 }
 	
 	
@@ -1221,11 +1251,14 @@ footer .copyright a{
 	header nav{
 		width: 100%;
 		float: none;
-		background: #242424;
-		position: absolute;
-		margin-top: 130px;
+		background: transparent;
+		position: relative;
+		margin-top: 100px;
 		left: 0;
-		display: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 20px;
 	}
 
 	header nav.show{
@@ -1237,19 +1270,20 @@ footer .copyright a{
 		display: block;
 		width: 100%;
 		margin: 0;
-		text-align: center;
-		-webkit-transition: all .2s linear;
+		text-align: left;
 	}
 
 	header nav li a{
 		display: block;
 		width: 100%;	
-		padding: 20px 0;
-		border-bottom: 1px solid #6b1224;
+		margin-top: 5px;
+		border-bottom: 1px solid #10105E;
 	}
 
-	header nav li:first-child a{
-		border-top: 1px solid #6b1224;
+
+	
+	header nav li:first-child{
+		margin: 0;
 	}
 
 	header .social{
@@ -1257,8 +1291,100 @@ footer .copyright a{
 	}
 
 	header .social li{
-		margin-left: 10px;
+		margin-left: 0px;
 	}
+
+.no-mobile{
+	display:none;
+}
+
+.mobile{
+	display: block;
+}
+
+.tagline{
+	text-align: justify;
+}
+
+.button-menu{
+	border: 2px solid #4189c3;
+	color: #4189c3;
+	background-color: #1f0d30;
+	position: center;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border-radius: 15px;
+	box-shadow: 0 4px #000000;
+
+}
+
+.button-slides{
+	visibility: visible;
+	border: 2px solid #10105E;
+	color: #79b3e2;
+	background-color: #0a0a1a;
+	position: center;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 700;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border-radius: 15px;
+	box-shadow: 0 4px #000000;
+
+}
+
+.button-stars{
+	visibility: hidden;
+}
+
+.h2{
+	font-size: 14;
+}
+
+footer{
+	text-align: left;
+	padding: 30px 0;
+	padding-right: 0px;
+	font-family: "open_regular", Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	color:#000000;
+}
+
+footer .app_platform li{
+	margin: 0 0 0 4px;
+}
+
+footer .app_platform li:first-child{
+	margin: 0;
+}
+
+footer .copyright{
+	margin-top: 60px;
+	margin-bottom: 60px;
+	color: #000000;
+	font-family: "open_regular", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	letter-spacing: .5px;
+	text-align: center;
+}
+
+footer .copyright a{
+	color: #000000;
+}
+
 
 	.about{
 	padding: 40px 0;

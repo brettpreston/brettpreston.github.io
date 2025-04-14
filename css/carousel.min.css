@@ -56,19 +56,7 @@
         font-size: 30;
     }
 
-    .tagline{
-        font-family:  'Exo 2';
-        color: #4189c3;
-        font-size: 20;
-        text-align: right;
-    }
 
-    .tagline2{
-        font-family:  'Exo 2';
-        color: #4189c3;
-        font-size: 20;
-        text-align: justify;
-    }
 
     .carousel-item .button-stars {
         position: absolute;
