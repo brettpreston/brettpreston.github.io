@@ -1517,4 +1517,9 @@ footer .copyright a{
 	.sub_box #mc_submit{
 		margin-top: 20px;
 	}
+}h2.tagline.text-uppercase,
+h1.text-uppercase,
+h4.text-uppercase,
+h3.text-uppercase {
+    text-align: center;
 }
