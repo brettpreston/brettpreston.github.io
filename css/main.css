@@ -282,15 +282,48 @@ header .social li:first-child{
 .tagline{
 	font-family:  'Exo 2';
 	color: #4189c3;
-	font-size: 20;
+	font-size: 20px;
 	text-align: right;
 }
 
 .tagline2{
 	font-family:  'Exo 2';
 	color: #4189c3;
-	font-size: 20;
+	font-size: 20px;
 	text-align: justify;
+}
+
+/* Larger fonts for projects section */
+#projects h2.tagline {
+	font-size: 30px;
+	text-align: center;
+}
+
+#projects p,
+#projects p a {
+	font-size: 18px;
+}
+
+/* Larger fonts for gamedev section */
+#gamedev h2.tagline {
+	font-size: 30px;
+	text-align: center;
+}
+
+#gamedev p,
+#gamedev p a {
+	font-size: 18px;
+}
+
+/* Larger fonts for team section */
+#team h2.tagline {
+	font-size: 30px;
+	text-align: center;
+}
+
+#team p,
+#team p a {
+	font-size: 18px;
 }
 
 
