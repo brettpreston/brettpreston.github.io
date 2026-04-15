@@ -57,6 +57,25 @@
 
 
 
+
+@font-face {
+    font-family: 'termina';
+    src: url('fonts/Termina.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'termina-light';
+    src: url('fonts/termina-light-webfont.woff') format('woff');
+	     url('fonts/termina-light-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 /* exo-2-regular - latin */
 @font-face {
   font-family: 'Exo 2';
@@ -115,6 +134,9 @@
 
 
 
+
+
+
 /*		General CSS		*/
 body{
 	background: #faf9f9;
@@ -124,6 +146,10 @@ body{
 
 }
 
+a:focus{
+	color: #fff!important;
+	text-decoration: none!important;
+}
 
 .container{
 	max-width: 90%;
@@ -143,17 +169,12 @@ body{
 @media (min-width:1600px){.container{width:1500px}}
 
 .container2{
-	max-width: 100%;
+	max-width: 90%;
 	padding-right:15px;
 	padding-left:15px;
 	margin-right:auto;
 	margin-left:auto}
 	
-@media (max-width:768px){.container2{
-	padding-bottom: 20px;
-	max-width: 98%;
-}}
-
 @media (min-width:768px){.container2{width:750px}}
 
 @media (min-width:992px){.container2{width:970px}}
@@ -201,7 +222,9 @@ header .logo{
 }
 
 header .burger_icon{
+	display: none;
 	float: right;
+	background: #ffffff;
 	padding: 5px 10px;
 	text-transform: uppercase;
 
@@ -213,6 +236,8 @@ header .burger_icon{
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 	border-color: #000000
+
+	margin: 45px 10px 0 0;
 }
 
 header .burger_icon:hover{
@@ -247,6 +272,10 @@ header nav li a{
 	font-style: bold;
 	font-size: 26px;
 
+	transition: all .2s linear;
+	-o-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
 }
 
 header nav li a:hover,
@@ -279,52 +308,7 @@ header .social li:first-child{
 
 
 
-.tagline{
-	font-family:  'Exo 2';
-	color: #4189c3;
-	font-size: 20px;
-	text-align: right;
-}
 
-.tagline2{
-	font-family:  'Exo 2';
-	color: #4189c3;
-	font-size: 20px;
-	text-align: justify;
-}
-
-/* Larger fonts for projects section */
-#projects h2.tagline {
-	font-size: 30px;
-	text-align: center;
-}
-
-#projects p,
-#projects p a {
-	font-size: 18px;
-}
-
-/* Larger fonts for gamedev section */
-#gamedev h2.tagline {
-	font-size: 30px;
-	text-align: center;
-}
-
-#gamedev p,
-#gamedev p a {
-	font-size: 18px;
-}
-
-/* Larger fonts for team section */
-#team h2.tagline {
-	font-size: 30px;
-	text-align: center;
-}
-
-#team p,
-#team p a {
-	font-size: 18px;
-}
 
 
 
@@ -686,6 +670,7 @@ a.app_link{
 	padding: 80px 10% 40px 10%;
 	background-image: linear-gradient(#10105E,#0a0a1a,#0a0a1a,#0a0a1a,#10105E);
 	background-repeat: no-repeat;
+	background-width: cover;
 	background-color: #10105E;
 	height: auto;
 	font-weight: 200;
@@ -837,10 +822,6 @@ a.app_link{
 	text-align: left;
 }
 
-.button-slides{
-	visibility: hidden;
-}
-
 .button-epk {
 	
         border: 2px solid #4189c3;
@@ -882,10 +863,6 @@ a.app_link{
 	cursor: pointer;
 	border-radius: 15px;
 }
-
-.button-menu {
-}
-
 
   .button-epk:active {
 	background-color: #0a0a1a;
@@ -1003,7 +980,7 @@ a.app_link{
 
 /*  */
 
-#tslider{
+.#tslider{
 	text-align: center!important;
 	position: relative!important;
 }
@@ -1213,6 +1190,7 @@ footer .copyright a{
 		padding: 80px 10% 40px 10%;
 		background-image: linear-gradient(#10105E,#0a0a1a,#0a0a1a,#0a0a1a,#10105E);
 		background-repeat: no-repeat;
+		background-width: cover;
 		background-color: #10105E;
 		height: auto;
 		font-weight: 200;
@@ -1222,11 +1200,7 @@ footer .copyright a{
 }
 
 
-.no-mobile{}
 
-.mobile{
-	display:none;
-}
 
 @media (max-width: 360px) {
 
@@ -1236,7 +1210,7 @@ footer .copyright a{
 	width: 100%;
 	height: 120px;
 	z-index: 99;
-	background: url('../img/name.png');
+	background: url('../img/solidarity_thin.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #0a0a1a;
@@ -1251,9 +1225,6 @@ footer .copyright a{
 	}
 }
 
-
-
-
 @media (max-width: 767px) {
 
 
@@ -1262,14 +1233,13 @@ footer .copyright a{
 	position: relative;
 	display: block;
 	width: 100%;
-	height: 80;
+	height: 120px;
 	z-index: 99;
-	background-image: linear-gradient(to top right,#0a0a1a,#10105E);
-	background: url('../img/name.png');
+	background: url('../img/solidarity.png');
 	background-repeat: no-repeat;
-	background-size: 400px 70px;
+	background-size: 332px 100px;
+	background-position: center;
 	background-color: #0a0a1a;
-	background-position: right;
 }
 	
 	
@@ -1284,14 +1254,11 @@ footer .copyright a{
 	header nav{
 		width: 100%;
 		float: none;
-		background: transparent;
-		position: relative;
-		margin-top: 100px;
+		background: #242424;
+		position: absolute;
+		margin-top: 130px;
 		left: 0;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		padding-bottom: 20px;
+		display: none;
 	}
 
 	header nav.show{
@@ -1303,20 +1270,18 @@ footer .copyright a{
 		display: block;
 		width: 100%;
 		margin: 0;
-		text-align: left;
+		text-align: center;
 	}
 
 	header nav li a{
 		display: block;
 		width: 100%;	
-		margin-top: 5px;
-		border-bottom: 1px solid #10105E;
+		padding: 20px 0;
+		border-bottom: 1px solid #6b1224;
 	}
 
-
-	
-	header nav li:first-child{
-		margin: 0;
+	header nav li:first-child a{
+		border-top: 1px solid #6b1224;
 	}
 
 	header .social{
@@ -1324,100 +1289,8 @@ footer .copyright a{
 	}
 
 	header .social li{
-		margin-left: 0px;
+		margin-left: 10px;
 	}
-
-.no-mobile{
-	display:none;
-}
-
-.mobile{
-	display: block;
-}
-
-.tagline{
-	text-align: justify;
-}
-
-.button-menu{
-	border: 2px solid #4189c3;
-	color: #4189c3;
-	background-color: #1f0d30;
-	position: center;
-	padding: 5px 10px;
-	text-align: center;
-	text-decoration: none;
-	font-size: 20px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	transition-duration: 0.4s;
-	cursor: pointer;
-	border-radius: 15px;
-	box-shadow: 0 4px #000000;
-
-}
-
-.button-slides{
-	visibility: visible;
-	border: 2px solid #10105E;
-	color: #79b3e2;
-	background-color: #0a0a1a;
-	position: center;
-	padding: 5px 10px;
-	text-align: center;
-	text-decoration: none;
-	font-size: 20px;
-	font-weight: 700;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	transition-duration: 0.4s;
-	cursor: pointer;
-	border-radius: 15px;
-	box-shadow: 0 4px #000000;
-
-}
-
-.button-stars{
-	visibility: hidden;
-}
-
-.h2{
-	font-size: 14;
-}
-
-footer{
-	text-align: left;
-	padding: 30px 0;
-	padding-right: 0px;
-	font-family: "open_regular", Helvetica, Arial, sans-serif;
-	font-size: 24px;
-	color:#000000;
-}
-
-footer .app_platform li{
-	margin: 0 0 0 4px;
-}
-
-footer .app_platform li:first-child{
-	margin: 0;
-}
-
-footer .copyright{
-	margin-top: 60px;
-	margin-bottom: 60px;
-	color: #000000;
-	font-family: "open_regular", Helvetica, Arial, sans-serif;
-	font-size: 20px;
-	letter-spacing: .5px;
-	text-align: center;
-}
-
-footer .copyright a{
-	color: #000000;
-}
-
 
 	.about{
 	padding: 40px 0;
@@ -1550,9 +1423,4 @@ footer .copyright a{
 	.sub_box #mc_submit{
 		margin-top: 20px;
 	}
-}h2.tagline.text-uppercase,
-h1.text-uppercase,
-h4.text-uppercase,
-h3.text-uppercase {
-    text-align: center;
 }
